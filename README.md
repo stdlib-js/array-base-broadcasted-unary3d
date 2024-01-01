@@ -41,14 +41,30 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-broadcasted-unary3d
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import bunary3d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-unary3d@esm/index.mjs';
+var bunary3d = require( '@stdlib/array-base-broadcasted-unary3d' );
 ```
 
 #### bunary3d( arrays, shapes, fcn )
@@ -56,8 +72,8 @@ import bunary3d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcast
 Applies a unary callback to elements in a [broadcasted][@stdlib/array/base/broadcast-array] nested input array and assigns results to elements in a three-dimensional nested output array.
 
 ```javascript
-import zeros3d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros3d@esm/index.mjs';
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
+var zeros3d = require( '@stdlib/array-base-zeros3d' );
+var abs = require( '@stdlib/math-base-special-abs' );
 
 var x = [ [ [ -1.0, -2.0 ] ] ];
 var y = zeros3d( [ 1, 2, 2 ] );
@@ -98,17 +114,12 @@ The function accepts the following arguments:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
-import filled3dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled3d-by@esm/index.mjs';
-import zeros3d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros3d@esm/index.mjs';
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
-import bunary3d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-unary3d@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
+var filled3dBy = require( '@stdlib/array-base-filled3d-by' );
+var zeros3d = require( '@stdlib/array-base-zeros3d' );
+var abs = require( '@stdlib/math-base-special-abs' );
+var bunary3d = require( '@stdlib/array-base-broadcasted-unary3d' );
 
 var shapes = [
     [ 1, 1, 3 ],
@@ -123,10 +134,6 @@ console.log( y );
 
 bunary3d( [ x, y ], shapes, abs );
 console.log( y );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -150,7 +157,7 @@ console.log( y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -167,7 +174,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -210,9 +217,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-broadcasted-unary3d/main/LICENSE
 
-[@stdlib/array/base/broadcast-array]: https://github.com/stdlib-js/array-base-broadcast-array/tree/esm
+[@stdlib/array/base/broadcast-array]: https://github.com/stdlib-js/array-base-broadcast-array
 
-[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes/tree/esm
+[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
 
 </section>
 
