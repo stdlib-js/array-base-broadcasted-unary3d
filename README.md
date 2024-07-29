@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import bunary3d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-unary3d@esm/index.mjs';
+import bunary3d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-unary3d@v0.2.2-esm/index.mjs';
 ```
 
 #### bunary3d( arrays, shapes, fcn )
@@ -108,7 +108,7 @@ var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-bas
 import filled3dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled3d-by@esm/index.mjs';
 import zeros3d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros3d@esm/index.mjs';
 import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
-import bunary3d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-unary3d@esm/index.mjs';
+import bunary3d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-unary3d@v0.2.2-esm/index.mjs';
 
 var shapes = [
     [ 1, 1, 3 ],
